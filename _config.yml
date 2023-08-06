@@ -18,6 +18,9 @@ breadcrumbs     : false # true, false (default)
 words_per_minute : 200
 permalink       : none
 
+minimal_mistakes_skin: "neon"
+
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :

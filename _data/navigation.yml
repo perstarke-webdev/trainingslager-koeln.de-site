@@ -1,8 +1,14 @@
 # main links
 main:
-  - title: "Home"
+  - title: "Willkommen"
     url: /
-  - title: "Impressum"
-    url: /imprint
+  - title: "Galerie"
+    url: /#galerie
+  - title: "Trainer*Innen"
+    url: /#trainer_innen
+  - title: "Infos"
+    url: /#infos
+  - title: "Kontakt"
+    url: /#kontakt
 
 

@@ -4,8 +4,8 @@ main:
     url: /
   - title: "Galerie"
     url: /#galerie
-  - title: "Trainer*Innen"
-    url: /#trainer_innen
+  - title: "Team"
+    url: /#team
   - title: "Infos"
     url: /#infos
   - title: "Kontakt"

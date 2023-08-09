@@ -8,6 +8,11 @@
     color: #7fa8d6;
 }
 
+.subtle-green {
+    color: #88b04b;
+}
+
+
 h1.bigger {
     font-size: 2rem;
 }
@@ -196,10 +201,27 @@ span.bold {
 }
 
 .rezension-box {
-    border: 2px solid #d3a95a; /* Set border color */
     border-radius: 5px;
-    background-color: rgba(211, 169, 90, 0.1); /* Transparent background color */
 }
+
+/* First box */
+.first-box {
+    border: 2px solid #d3a95a;
+    background-color: rgba(211, 169, 90, 0.1); /* Transparent version of border color */
+}
+
+/* Second box with subtle blue color */
+.second-box {
+    border: 2px solid #7fa8d6; /* Subtle blue border color */
+    background-color: rgba(127, 168, 214, 0.1); /* Transparent version of blue border color */
+}
+
+/* Third box with subtle green color */
+.third-box {
+    border: 2px solid #88b04b; /* Subtle green border color */
+    background-color: rgba(136, 176, 75, 0.1); /* Transparent version of green border color */
+}
+
 
 
 .rezension-text {
@@ -233,3 +255,12 @@ a.fixlink:visited {
 a.fixlink:hover {
     color: #ddbe82 !important;
 }
+
+.padding-icon {
+    padding-right: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 40px;
+}
+

@@ -81,16 +81,27 @@ hr.section-sep-with-image::after {
 }
 
 .box {
-    flex-grow: 1; /* Fill available space */
+    flex-grow: 1;
     flex: 1 1 0px;
-    min-width: 285px; /* Set minimum width */
+    min-width: 285px;
     margin: 5px;
     padding: 10px;
-    border: 2px solid #d3a95a;
     border-radius: 5px;
     display: flex;
-    flex-direction: column; /* Align content vertically */
+    flex-direction: column;
+    border: 2px solid transparent; /* Set border to be transparent initially */
 }
+
+.box1 {
+    border-image: linear-gradient(to bottom left, #d3a95a, #7fa8d6) 1;
+    border-image-slice: 1;
+}
+
+.box2 {
+    border-image: linear-gradient(to bottom right, #d3a95a, #88b04b) 1;
+    border-image-slice: 1;
+}
+
 
 .no-margin {
     margin: 0;

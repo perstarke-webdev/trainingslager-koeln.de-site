@@ -16,10 +16,11 @@ e-Mail: per_at_starke-team.de
 <br>
 
 
+
 ## Datenschutzerklärung
 
 #### Geltungsbereich
-Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter Per Starke auf dieser Website (im folgenden “Angebot”) auf.<br />
+Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter Johanna Fatou Roxlau auf dieser Website (im folgenden “Angebot”) auf.<br />
 <br />
 Die rechtlichen Grundlagen des Datenschutzes finden sich in der Datenschutzgrundverordnung (DSGVO), dem Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).<br />
 <br />
@@ -36,12 +37,14 @@ Der Anbieter behält sich jedoch vor, die Protokolldaten nachträglich zu überp
 #### Kontaktaufnahme
 Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.
 
-
 #### Kommentare und Beiträge
 Diese Site enthält keine Kommentarfunktion, Nutzer können daher keine Beiträge hinterlassen.
 
 #### Analyse, Tracking und Cookies
-Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln, und keine Cookies.
+Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln, und wir selber setzen keine Cookies.  
+Allerdings kann durch die Einbindung von Google Maps seitens Google auf die Verwendung von Cookies zurückgegriffen werden.  
+Mehr Informationen gibt es in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de%22).
+
 
 #### Haftung für Links
 Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
@@ -68,3 +71,4 @@ Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über di
 #### Quelle
 Danke an Hr Rechtsanwalt Thomas Schwenke:<br>
 <a href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/"><strong>Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it</strong></a>
+

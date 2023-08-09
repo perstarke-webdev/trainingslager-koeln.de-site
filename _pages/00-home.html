@@ -59,12 +59,47 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Trainer*In 3"
     excerpt: "Hier könnten die einzelnen TrainerInnen / TeammitgliederInnen vorgestellt werden"
+
+start_images:
+  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
+
 ---
 
 <h1 class="text-center subtle-blue bigger">
   <span id="willkommen"></span>
   Willkommen im Trainingslager Köln
 </h1>
+
+<style>
+  @media (max-width: 600px) {
+    .desktop-only {
+      display: none;
+    }
+    .mobile-only {
+      display: block;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .desktop-only {
+      display: block;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
+</style>
+
+<div class="desktop-only">
+  {% include feature_row id="start_images" %}
+</div>
+
+<div class="mobile-only">
+  <img src="/assets/images/unsplash-gallery-image-3-th.jpg">
+  <br><br>
+</div>
 
 <p class="center">
   (ChatGPT-Platzhalter-Text):<br>

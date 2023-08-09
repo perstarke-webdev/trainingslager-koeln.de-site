@@ -154,3 +154,63 @@ span.bold {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+
+
+.rezension-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rezension-flex-box {
+    flex: 1 0 30%; /* Anpassen der Breite der Boxen */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+
+.stars {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+
+.stars i {
+    color: gold;
+}
+
+.stars-text {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.rezension-box {
+    border: 2px solid #d3a95a; /* Set border color */
+    border-radius: 5px;
+    background-color: rgba(211, 169, 90, 0.1); /* Transparent background color */
+}
+
+
+.rezension-text {
+    font-style: italic;
+    font-size: 0.8em !important;
+}
+
+hr.rezension-sep {
+    border-top: 2px solid #d3a95a;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

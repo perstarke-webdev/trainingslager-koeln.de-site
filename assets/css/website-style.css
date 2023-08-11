@@ -275,3 +275,8 @@ a.fixlink:hover {
     margin-bottom: 40px;
 }
 
+
+.masthead {
+    border-bottom: none !important; /* This will remove the bottom border, if that's what's causing the separation */
+}
+

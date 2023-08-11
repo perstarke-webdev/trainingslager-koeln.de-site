@@ -8,8 +8,8 @@
     color: #7fa8d6;
 }
 
-.subtle-green {
-    color: #88b04b;
+.subtle-orange {
+    color: #a77963;
 }
 
 
@@ -98,7 +98,7 @@ hr.section-sep-with-image::after {
 }
 
 .box2 {
-    border-image: linear-gradient(to bottom right, #d3a95a, #88b04b) 1;
+    border-image: linear-gradient(to bottom right, #d3a95a, #a77963) 1;
     border-image-slice: 1;
 }
 
@@ -227,10 +227,10 @@ span.bold {
     background-color: rgba(127, 168, 214, 0.1); /* Transparent version of blue border color */
 }
 
-/* Third box with subtle green color */
+/* Third box with subtle orange color */
 .third-box {
-    border: 2px solid #88b04b; /* Subtle green border color */
-    background-color: rgba(136, 176, 75, 0.1); /* Transparent version of green border color */
+    border: 2px solid #a77963; /* Subtle orange border color */
+    background-color: rgba(167, 121, 99, 0.1); /* Transparent version of orange border color */
 }
 
 
@@ -277,6 +277,30 @@ a.fixlink:hover {
 
 
 .masthead {
-    border-bottom: none !important; /* This will remove the bottom border, if that's what's causing the separation */
+    border-bottom: none !important;
 }
+
+
+.lighter-brown {
+    background-color: #3d3630;
+}
+
+
+  @media (max-width: 600px) {
+    .desktop-only {
+      display: none;
+    }
+    .mobile-only {
+      display: block;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .desktop-only {
+      display: block;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
 

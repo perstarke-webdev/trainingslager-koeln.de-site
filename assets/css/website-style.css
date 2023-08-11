@@ -304,3 +304,17 @@ a.fixlink:hover {
     }
   }
 
+
+
+/* Add this to your stylesheet */
+.zoomed-image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoomed-image:hover {
+  transform: scale(1.05);
+}
+
+
+
+

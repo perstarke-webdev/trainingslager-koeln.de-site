@@ -22,52 +22,6 @@ h1.bigger {
     color: #d3a95a;
 }
 
-hr.section-sep {
-  border: none;
-  height: 3px;
-  margin: 50px 0;
-  background: linear-gradient(to left, transparent 0%, #d3a95a 40%, #d3a95a 60%, transparent 100%);
-}
-
-hr.section-sep-with-image {
-  border: none;
-  height: 80px;
-  padding-top: 38.1px;
-  padding-bottom: 38.1px;
-  margin: 80px 0; /* Adjust the margin as needed */
-  position: relative;
-}
-
-/* Add the gradient to the whole line */
-hr.section-sep-with-image::before {
-  content: "";
-  display: block;
-  height: 100%;
-  background: linear-gradient(
-    to left,
-    transparent 0%,
-    #d3a95a 45%,
-    #d3a95a 55%,
-    transparent 100%
-  );
-}
-
-/* Add the image using the ::after pseudo-element */
-hr.section-sep-with-image::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%; /* Adjust the vertical position of the image */
-  left: 50%; /* Adjust the horizontal position of the image */
-  transform: translate(-50%, -50%); /* Center the image */
-  width: 160px; /* Adjust the width of the image as needed */
-  height: 160px; /* Adjust the height of the image as needed */
-  background-image: url("/images/barbell.png");
-  background-size: cover; /* Scale the image to cover the container */
-  background-color: #1e1813; /* Set the background color of the image */
-  z-index: 1; /* Ensure the image is positioned above the gradient */
-}
-
 
 
 
@@ -315,8 +269,127 @@ a.fixlink:hover {
 }
 
 
+.section {
+    padding: 80px 5vw 0 5vw;
+    margin-top: -80px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+.alternate-section {
+    background-color: #3d3630;
+}
+
+
+.normal-section {
+    background-color: #1e1813;
+}
 
 
 
 
 
+
+
+
+
+
+/* Default styling for the container */
+.section-sep-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Alternative separator using ::before pseudo-element */
+.section-sep-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 3px; /* Adjust the height for the separator line */
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    #d3a95a 35%,
+    #d3a95a 65%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+/* Default styling for the image container */
+.section-sep-image-container {
+  background: linear-gradient(
+    to bottom,
+    #1e1813 0%,
+    #1e1813 50%,
+    #3d3630 50%,
+    #3d3630 100%
+  );
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  margin-top: 160px;
+  top: -80px; /* Offset the position to align with the separator */
+}
+
+/* Image inside the container */
+.section-sep-image-container img {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.section-sep-image-container-alternate {
+  background: linear-gradient(
+    to bottom,
+    #3d3630 0%,
+    #3d3630 50%,
+    #1e1813 50%,
+    #1e1813 100%
+  );
+}
+
+
+.separator-one {
+    background: linear-gradient(
+        to bottom,
+        #1e1813 0%,
+        #1e1813 50%,
+        #3d3630 50%,
+        #3d3630 100%
+    );
+    padding: 0 5vw 0 5vw;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.separator-two {
+    background: linear-gradient(
+        to top,
+        #1e1813 0%,
+        #1e1813 50%,
+        #3d3630 50%,
+        #3d3630 100%
+    );
+    padding: 0 5vw 0 5vw;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}

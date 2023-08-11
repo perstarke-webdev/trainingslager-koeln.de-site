@@ -277,7 +277,6 @@ a.fixlink:hover {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    z-index: -1;
 }
 
 
@@ -323,7 +322,6 @@ a.fixlink:hover {
     #d3a95a 65%,
     transparent 100%
   );
-  z-index: 1;
 }
 
 /* Default styling for the image container */
@@ -339,7 +337,6 @@ a.fixlink:hover {
   display: inline-block;
   width: 160px;
   height: 160px;
-  z-index: 2;
   margin-top: 160px;
   top: -80px; /* Offset the position to align with the separator */
 }
@@ -348,7 +345,6 @@ a.fixlink:hover {
 .section-sep-image-container img {
   width: 100%;
   height: 100%;
-  z-index: 999;
 }
 
 .section-sep-image-container-alternate {

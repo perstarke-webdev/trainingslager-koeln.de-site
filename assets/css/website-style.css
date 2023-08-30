@@ -389,3 +389,141 @@ a.fixlink:hover {
     right: 50%;
     transform: translateX(-50%);
 }
+
+
+
+
+
+
+
+
+
+.container_start {
+    display: flex;
+    text-align: center;
+}
+
+.box10,
+.box11 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box10 {
+    flex: 0.4; /* Adjust this value to control the width of the left box */
+}
+
+.box11 {
+    flex: 0.6; /* Adjust this value to control the width of the right box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+}
+
+.box10 img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .container_start {
+        flex-direction: column; /* Stack boxes below each other */
+    }
+
+    .box10,
+    .box11 {
+        flex: 1 100%; /* Take full width on smaller screens */
+    }
+}
+
+
+
+
+.box12,
+.box13 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    order: 0
+}
+
+.box12 {
+    flex: 0.6; /* Adjust this value to control the width of the left box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+}
+
+.box13 {
+    flex: 0.4; /* Adjust this value to control the width of the right box */
+}
+
+.box13 img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .container_start {
+        flex-direction: column; /* Stack boxes below each other */
+    }
+
+    .box12,
+    .box13 {
+        flex: 1 100%; /* Take full width on smaller screens */
+    }
+
+    .box12 {
+        order: 2
+    }
+    .box13 {
+        oder: 1
+    }
+}
+
+
+
+
+.kein0815-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.kein0815-box {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #d3a95a;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.round-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width: 700px) {
+    .kein0815-container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes horizontally */
+    }
+
+    .kein0815-box {
+        width: 100%; /* Take up full width */
+        margin-bottom: 20px; /* Add spacing between boxes */
+    }
+}

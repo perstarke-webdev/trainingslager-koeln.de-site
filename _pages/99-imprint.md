@@ -1,18 +1,30 @@
 ---
-layout: single
+layout: single_imprint
 title: Impressum und Datenschutz
 permalink: /imprint
 author_profile: false
 ---
 
+
+<br><br><br>
+# Impressum & Datenschutz
+
+
 #### Anbieter und Verantwortliche Person
-Per Starke, Willi-Lauf Allee 43, D-50858 Köln
+Trainingslager Köln    
+CölnCampus Fitness GmbH     
+Zülpicher Str. 58  
+50674 Köln     
+St.-Nr.: 521458022451   
+Geschäftsführer: Matthias Drobeck   
+Sitz der Gesellschaft: Köln / Amtsgericht Köln   
+Handelsregister Nr.: HRB 53898    
 
 
 #### Kontakt
-Telefon: +49 160 93268817
+Telefon: 0221-4248875  
 <br>
-e-Mail: per_at_starke-team.de
+E-Mail: info_at_trainingslager-koeln.de  
 <br>
 
 
@@ -20,7 +32,7 @@ e-Mail: per_at_starke-team.de
 ## Datenschutzerklärung
 
 #### Geltungsbereich
-Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter Johanna Fatou Roxlau auf dieser Website (im folgenden “Angebot”) auf.<br />
+Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den vorstehend genannten Anbieter auf dieser Website (im folgenden “Angebot”) auf.<br />
 <br />
 Die rechtlichen Grundlagen des Datenschutzes finden sich in der Datenschutzgrundverordnung (DSGVO), dem Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).<br />
 <br />
@@ -71,4 +83,3 @@ Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über di
 #### Quelle
 Danke an Hr Rechtsanwalt Thomas Schwenke:<br>
 <a href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/"><strong>Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it</strong></a>
-

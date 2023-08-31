@@ -10,5 +10,7 @@ main:
     url: /#infos
   - title: "Kontakt"
     url: /#kontakt
+  - title: "Aktuelles"
+    url: /#aktuelles
 
 

@@ -8,9 +8,10 @@ main:
     url: /#team
   - title: "Infos"
     url: /#infos
-  - title: "Kontakt"
-    url: /#kontakt
   - title: "Aktuelles"
     url: /#aktuelles
+  - title: "Kontakt"
+    url: /#kontakt
+
 
 

@@ -536,3 +536,14 @@ a.fixlink:hover {
         margin-bottom: 20px; /* Add spacing between boxes */
     }
 }
+
+
+
+@media (max-height: 600px) {
+    .page__title {
+        padding-top: 200px;
+    }
+}
+
+
+

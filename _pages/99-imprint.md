@@ -63,7 +63,8 @@ Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder 
 Diese Site enthält keine Kommentarfunktion, Nutzer können daher keine Beiträge hinterlassen.
 
 #### Analyse, Tracking und Cookies
-Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln, und wir selber setzen keine Cookies.  
+Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln.
+Es wird ein Cookie für die Dauer von einem Tag gesetzt, um die Zustimmung zur Verwendung der Website zu speichern, im Banner auf der Startseite, davon abgesehen setzen wir selber keine Cookies.
 Allerdings kann durch die Einbindung von Google Maps seitens Google auf die Verwendung von Cookies zurückgegriffen werden.  
 Mehr Informationen gibt es in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de%22).
 

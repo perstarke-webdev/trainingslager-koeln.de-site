@@ -1,0 +1,17 @@
+# main links
+main:
+  - title: "Willkommen"
+    url: /
+  - title: "Galerie"
+    url: /#galerie
+  - title: "Team"
+    url: /#team
+  - title: "Infos"
+    url: /#infos
+  - title: "Aktuelles"
+    url: /#aktuelles
+  - title: "Kontakt"
+    url: /#kontakt
+
+
+

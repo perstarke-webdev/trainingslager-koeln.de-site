@@ -66,7 +66,8 @@ Diese Site enthält keine Kommentarfunktion, Nutzer können daher keine Beiträg
 #### Analyse, Tracking und Cookies
 Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln.
 Es wird ein Cookie für die Dauer von einem Tag gesetzt, um die Zustimmung zur Verwendung der Website zu speichern, im Banner auf der Startseite, davon abgesehen setzen wir selber keine Cookies.
-Allerdings kann durch die Einbindung von Google Maps seitens Google auf die Verwendung von Cookies zurückgegriffen werden.  
+Allerdings kann durch die Einbindung von Google Maps und YouTube auf die Verwendung von Cookies zurückgegriffen werden.
+Dies geschieht nur nach ausdrücklicher Zustimmung.  
 Mehr Informationen gibt es in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de%22).
 
 
@@ -99,9 +100,6 @@ Russo One unterliegt der [Open Font License](https://scripts.sil.org/cms/scripts
 #### Widerruf, Änderungen, Berichtigungen und Aktualisierungen
 Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die über ihn gespeichert wurden. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit dem keine gesetzliche Aufbewahrungspflicht entgegensteht.<br />
 
-#### Quelle
-Danke an Hr Rechtsanwalt Thomas Schwenke:<br>
-<a href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/"><strong>Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it</strong></a>  
 
 #### Erstellt von Per Starke Web Development
   

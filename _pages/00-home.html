@@ -150,45 +150,74 @@ start_images:
 
 
 <br>
-
 <div id="cookie-banner" class="center">
-  Diese Website verwendet Google Maps, einen Dienst von Google LLC, um interaktive Karten anzuzeigen.
-  Dieser Dienst verwendet Cookies (technisch notwendige Cookies, Analyse-Cookies und Marketing-Cookies).
-  Mehr Infos findest du in der
-  <a href="https://policies.google.com/privacy?hl=de" class="fixlink"
-     target="_blank" rel="noopener noreferrer nofollow">
-    Datenschutzerklärung von Google.</a><br><br>
-  Diese Website wird über GitHub Pages zur Verfügung gestellt, das heißt, sie verwendet ein globales Verteilernetzwerk (CDN), um Inhalte zuverlässig anzuzeigen. Wenn du die Website nutzt, können einige deiner nicht-persönlichen Daten, wie beispielsweise die IP-Adresse und Informationen zur Seitennutzung, über dieses Netzwerk übertragen werden, um eine einwandfreie Funktion der Website zu gewährleisten.
-  Mehr Infos findest du im
-  <a href="/imprint#github-pages-und-cdn-nutzung" class="fixlink"
-     target="_blank" rel="noopener noreferrer nofollow">
-    Impressum & Datenschutz</a><br><br>
+  <h3>Information zur Nutzung von Google Maps und GitHub Pages</h3>
+  <p>
+    Diese Website verwendet <strong>Google Maps</strong> von Google LLC, um interaktive Karten anzuzeigen. Dabei können Cookies (technisch notwendige, Analyse- und Marketing-Cookies) eingesetzt werden. Weitere Informationen findest du in der
+    <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer nofollow">Datenschutzerklärung von Google</a>.
+  </p>
+  <p>
+    Zusätzlich wird diese Website über GitHub Pages bereitgestellt, wobei ein globales Content Delivery Network (CDN) verwendet wird. Hierbei können nicht-personenbezogene Daten wie die IP-Adresse und Nutzungsinformationen übertragen werden. Mehr dazu im
+    <a href="/imprint#github-pages-und-cdn-nutzung" target="_blank" rel="noopener noreferrer nofollow">Impressum & Datenschutz</a>.
+  </p>
 
-  Bitte bestätige, dass du damit einverstanden bist, sowie damit, dass wir ein Zustimmungs-Cookie verwenden, das für einen Zeitraum von einem Tag gespeichert wird. Dieses Cookie ermöglicht es uns, deine Zustimmung zur Verwendung von nicht-persönlichen Daten und zur einwandfreien Funktion der Website zu speichern.<br><br>
-  <button class="btn-custom" id="cookie-consent-btn">Einverstanden</button>
+  <h3>Cookie-Einstellungen</h3>
+  <p>
+    Du hast die Möglichkeit zu wählen:
+    <br>
+    - <strong>Alle Cookies erlauben</strong>: Interaktive Funktionen wie Google Maps sowie alle zusätzlichen Analyse- und Marketing-Cookies werden aktiviert.
+    <br>
+    - <strong>Nur notwendige Cookies</strong>: Es wird lediglich das essentielle Cookie gesetzt, das zur Speicherung deiner Cookie-Präferenzen benötigt wird. Weitere Cookies werden in diesem Fall nicht verwendet.
+  </p>
+
+  <button class="btn btn--warning" id="accept-all">Alle Cookies erlauben</button>
+  <button class="btn btn--primary" id="accept-necessary">Nur notwendige Cookies</button>
 </div>
 
-<!-- JavaScript-Code für den Cookie Consent-Banner -->
+
 <script>
-    // Überprüfe, ob das Cookie für die Zustimmung gesetzt ist
-    if (document.cookie.indexOf('cookieConsent=1') !== -1) {
-        document.getElementById('cookie-banner').style.display = 'none';
+  // Hilfsfunktion zum Setzen eines Cookies
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
     }
-
-  // Funktion zum Ausblenden des Banners und Setzen des Zustimmungs-Cookies für einen Tag
-  function setCookieConsent() {
-      document.getElementById('cookie-banner').style.display = 'none';
-
-      // Erstelle ein Date-Objekt für das Ablaufdatum (einen Tag ab dem aktuellen Datum)
-      var expiresDate = new Date();
-      expiresDate.setDate(expiresDate.getDate() + 1);
-
-      // Setze ein Cookie, um die Zustimmung des Benutzers für einen Tag zu speichern
-      document.cookie = 'cookieConsent=1; expires=' + expiresDate.toUTCString() + '; path=/';
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
   }
 
-    // Event Listener für den Einverstanden-Button
-    document.getElementById('cookie-consent-btn').addEventListener('click', setCookieConsent);
+  // Hilfsfunktion zum Lesen eines Cookies
+  function getCookie(name) {
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+    return null;
+  }
+
+  // Funktion zur Verarbeitung der Cookie-Zustimmung
+  function handleConsent(choice) {
+    console.log("User consent choice: " + choice); // Debugging-Ausgabe
+    setCookie("cookieConsent", choice, 1); // Speichert die Auswahl für einen Tag
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+
+  // Event Listener für die Buttons
+  document.getElementById("accept-all").addEventListener("click", function () {
+    handleConsent("all");
+  });
+
+  document.getElementById("accept-necessary").addEventListener("click", function () {
+    handleConsent("essential");
+  });
+
+  // Überprüfen, ob bereits eine Zustimmung vorliegt
+  document.addEventListener("DOMContentLoaded", function () {
+    let consent = getCookie("cookieConsent");
+    if (consent) {
+      document.getElementById("cookie-banner").style.display = "none";
+    }
+  });
 </script>
 
 
@@ -496,9 +525,76 @@ Infos
       </button>
     </a>
     <br>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.760076917561!2d6.93234937676961!3d50.92815507168734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf24fe9f6d8247%3A0x7430d4a4668ca5a6!2sTrainingslager%20K%C3%B6ln!5e0!3m2!1sen!2sde!4v1691527780625!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="map-container" id="map-container">
+      <!-- Fallback-Text, falls Cookies nicht erlaubt sind -->
+      <div class="map-placeholder" id="map-placeholder">
+        <p>Google Maps kann nicht angezeigt werden, da die dafür notwendigen Cookies nicht erlaubt wurden.</p>
+      </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        checkAndLoadMap();
+      });
+
+      // Funktion zum Prüfen der Cookie-Zustimmung und Laden der Map
+      function checkAndLoadMap() {
+        let consent = getCookie("cookieConsent");
+
+        if (consent === "all") {
+          loadGoogleMap();
+        }
+      }
+
+      // Funktion zum Laden des Google Maps iFrame
+      function loadGoogleMap() {
+        let mapContainer = document.getElementById("map-container");
+
+        if (!document.getElementById("google-map-iframe")) {  // Falls nicht bereits geladen
+          mapContainer.innerHTML = `
+        <iframe id="google-map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.760076917561!2d6.93234937676961!3d50.92815507168734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf24fe9f6d8247%3A0x7430d4a4668ca5a6!2sTrainingslager%20K%C3%B6ln!5e0!3m2!1sen!2sde!4v1691527780625!5m2!1sen!2sde"
+          style="border:0; width: 100%; height: 400px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>`;
+        }
+      }
+
+      // Funktion zum Setzen eines Cookies
+      function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+          const date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+
+      // Funktion zum Lesen eines Cookies
+      function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length === 2) return parts.pop().split(";").shift();
+        return null;
+      }
+
+      // Event Listener für die Cookie-Banner-Buttons
+      document.getElementById("accept-all").addEventListener("click", function () {
+        setCookie("cookieConsent", "all", 1);
+        checkAndLoadMap();  // Lädt Google Maps sofort nach der Zustimmung
+      });
+
+      document.getElementById("accept-necessary").addEventListener("click", function () {
+        setCookie("cookieConsent", "essential", 1);
+      });
+    </script>
+
+
+
 
 
   </div>
@@ -716,12 +812,64 @@ Aktuelles / Instagram
 
   <div class="container">
 
-    <div class="box">
-      {% include video id="6XWkgMJGxgg" provider="youtube" %}
+    <div class="box video-container" id="video-container-6XWkgMJGxgg">
+      <div class="video-placeholder">
+        <p>YouTube-Video kann nicht angezeigt werden, da die dafür notwendigen Cookies nicht erlaubt wurden.</p>
+      </div>
     </div>
-    <div class="box">
-      {% include video id="cl5mGJc2XCs" provider="youtube" %}
+
+    <div class="box video-container" id="video-container-cl5mGJc2XCs">
+      <div class="video-placeholder">
+        <p>YouTube-Video kann nicht angezeigt werden, da die dafür notwendigen Cookies nicht erlaubt wurden.</p>
+      </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        checkAndLoadYouTube();
+      });
+
+      // Prüft die Cookie-Zustimmung und lädt die YouTube-Videos nur, wenn alle Cookies erlaubt sind
+      function checkAndLoadYouTube() {
+        let consent = getCookie("cookieConsent");
+
+        if (consent === "all") {
+          loadYouTubeVideo("6XWkgMJGxgg");
+          loadYouTubeVideo("cl5mGJc2XCs");
+        }
+      }
+
+      // Funktion zum Laden eines YouTube-Videos anhand der Video-ID
+      function loadYouTubeVideo(videoId) {
+        let videoContainer = document.getElementById("video-container-" + videoId);
+
+        if (videoContainer && !document.getElementById("youtube-iframe-" + videoId)) { // Falls nicht bereits geladen
+          videoContainer.innerHTML = `
+        <iframe id="youtube-iframe-${videoId}"
+          width="560" height="315"
+          src="https://www.youtube-nocookie.com/embed/${videoId}"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>`;
+        }
+      }
+
+      // Funktion zum Lesen eines Cookies
+      function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length === 2) return parts.pop().split(";").shift();
+        return null;
+      }
+
+      // Falls der Nutzer die Cookies akzeptiert, die Videos sofort laden
+      document.getElementById("accept-all").addEventListener("click", function () {
+        checkAndLoadYouTube();
+      });
+    </script>
+
 
   </div>
 

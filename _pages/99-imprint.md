@@ -106,4 +106,4 @@ Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über di
 [Website](https://perstarke-webdev.de/)   
 [Blog](https://blog.perstarke-webdev.de/)
 
-Erstellt von [PSWD](https://perstarke-webdev.de/) unter dem Dach von [Kröner & Starke Web Development](https://kroener-starke.ch/).
+Erstellt von [PSWD](https://perstarke-webdev.de/) unter dem Dach von [Kröner & Starke](https://kroener-starke.ch/).
